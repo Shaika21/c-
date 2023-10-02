@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+const int COUNT = 100;
+  int fizz = 0;
+  int buzz = 0;
+  int fizzbuzz= 0;
+
+for (int i = 1; i < COUNT; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    cout << "fizzbuzz" << endl;
+    fizzbuzz++;
+    }
+  else if (i % 3 == 0) {
+    cout << "fizz" << endl;
+    fizz++; 
+  }
+  else if (i % 5 == 0){
+    cout << "buzz" << endl;
+  buzz++; 
+  }
+  else {
+    cout << i << endl;
+  }
+  }
+  cout << " Num fizz: " << fizz << endl;
+  cout << " Num buzz: " << buzz << endl;
+  cout << "Num fizzbuzz: " << fizzbuzz << endl;
+  
+  return 0;
+  
+}
