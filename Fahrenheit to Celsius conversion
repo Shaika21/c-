@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+// F to C
+  
+  double f;
+  double c;
+
+  cout <<"Enter f: ";
+
+cin >> f;
+
+  c= (f-32)*.5556;
+  cout << f << " f is "
+    << c << "c."
+    <<endl;
+
+
+return 0;
+  }
