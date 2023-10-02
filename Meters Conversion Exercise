@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+ double y;
+ double m;
+ double choice;
+
+  cout << "1. Yards to Meters " << endl;
+  cout << "2. Meters to Yards " << endl;
+  cout << "Enter choice: " << endl;
+  cin >> choice;
+
+  // y to m
+
+  if(choice == 1){
+    cout << "Enter yard(s): ";
+    cin >> y;
+    m = y * 1.093;
+    cout << "meters(s) is: " << m << endl;
+    
+  }
+
+  //m to y
+
+  else if(choice == 2) {
+    cout << "Enter meter(s): ";
+    cin >> m;
+    y = m * 0.914;
+    cout << " Yards(s) is: " << y << endl;
+    
+  }
+  else {
+    cout << "Invalid input" << endl;
+  }
+  return 0;
+}
