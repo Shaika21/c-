@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+
+{
+
+  
+  double c;
+  double f;
+  int choice;
+
+  cout << " 1. c to f " << endl;
+  cout << " 2. f to c " << endl;
+  cout << "Enter choice: " << endl;
+  cin >> choice;
+
+// c to f
+  
+  if(choice == 1)
+  {
+    cout << "Enter f: ";
+    cin >> f;
+    c = (f-32) * .5556;
+    cout << " c is: " << c << endl;
+    }
+
+    // f to c
+    
+  else if(choice == 2 ) {
+    cout << "Enter c: ";
+    cin >> c;
+    f = (c * 1.8) + 32;
+    cout << " f is " << f;
+    }
+    else {
+      cout << " Invalid input" << endl;
+      }
+
+
+return 0;
+
+
+}
